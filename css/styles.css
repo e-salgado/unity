@@ -142,6 +142,7 @@ nav {
   padding: 4rem 0rem;
   width: 35%;
 }
+/* Custom List Bullets */
 .about-list li::before {
   content: "\2022";
   color: #ff5d73;
