@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +8,73 @@
 html {
   /* 1 rem now = 10 pixels*/
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ff5d73;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+a:hover,
+a:focus {
+  border-bottom: #ff5d73 solid 1px;
+  opacity: 1;
+}
+
+/* Nav Bar */
+#main-head {
+  background: #000;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  min-height: 10vh;
+  margin: auto;
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#logo {
+  color: #fff;
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  flex: 1 1 30rem;
+  justify-content: space-around;
+  align-items: center;
 }
