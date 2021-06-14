@@ -16,6 +16,10 @@ body {
 h1 {
   font-size: 4.2rem;
 }
+ul {
+  list-style: none;
+}
+
 li,
 button,
 label,
@@ -24,7 +28,7 @@ p {
   font-size: 2rem;
 }
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
 }
 h3 {
   font-size: 3rem;
@@ -101,11 +105,12 @@ nav {
   padding-bottom: 2rem;
 }
 #hero-btn {
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   background: transparent;
   color: #ff5d73;
   cursor: pointer;
   border: 1px solid #fff;
+  border-radius: 1rem;
   transition: 0.5s all ease-in-out;
 }
 #hero-btn:hover,
@@ -113,4 +118,33 @@ nav {
   color: #fff;
   background: #ff5d73;
   border: 1px solid #ff5d73;
+}
+
+/* About Section */
+.about-section {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+.about-section h2 {
+  text-align: center;
+  padding: 3rem;
+  background: #ff5d73;
+  color: #fff;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.info img {
+  padding: 4rem 0rem;
+  width: 35%;
+}
+.about-list li::before {
+  content: "\2022";
+  color: #ff5d73;
+  display: inline-block;
+  width: 2rem;
 }
