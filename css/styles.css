@@ -27,18 +27,17 @@ input,
 p {
   font-size: 2rem;
 }
-figcaption{
+figcaption {
   font-size: 1.4rem;
 }
 h2 {
   font-size: 3.8rem;
 }
-.section-headers{
+.section-headers {
   text-align: center;
   padding: 4rem;
   background: #ff5d73;
   color: #fff;
-}
 }
 h3 {
   font-size: 3rem;
@@ -129,13 +128,13 @@ nav {
   background: #ff5d73;
   border: 1px solid #ff5d73;
 }
-.arrows{
+.arrows {
   width: 6rem;
   height: 7.2rem;
   position: absolute;
   bottom: 3rem;
 }
-.arrows path{
+.arrows path {
   /* adds border to svg shapes */
   stroke: #ff5d73;
   stroke-width: 0.3rem;
@@ -190,19 +189,18 @@ nav {
 
 /* Keyframes */
 @keyframes bounce {
-  from{
+  from {
     transform: translateY(0px);
   }
-  to{
+  to {
     transform: translateY(20px);
   }
 }
-@-webkit-keyframes bounce /*Safari and Chrome*/
-{
-  from{
+@-webkit-keyframes bounce /*Safari and Chrome*/ {
+  from {
     transform: translateY(0px);
   }
-  to{
+  to {
     transform: translateY(20px);
   }
 }
