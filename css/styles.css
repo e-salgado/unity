@@ -27,8 +27,18 @@ input,
 p {
   font-size: 2rem;
 }
+figcaption{
+  font-size: 1.4rem;
+}
 h2 {
   font-size: 3.8rem;
+}
+.section-headers{
+  text-align: center;
+  padding: 4rem;
+  background: #ff5d73;
+  color: #fff;
+}
 }
 h3 {
   font-size: 3rem;
@@ -119,18 +129,30 @@ nav {
   background: #ff5d73;
   border: 1px solid #ff5d73;
 }
+.arrows{
+  width: 6rem;
+  height: 7.2rem;
+  position: absolute;
+  bottom: 3rem;
+}
+.arrows path{
+  /* adds border to svg shapes */
+  stroke: #ff5d73;
+  stroke-width: 0.3rem;
+  fill: transparent;
+  animation: bounce 1.3s infinite ease-in-out;
+  -webkit-animation: bounce 1.3s infinite ease-in-out;
+}
+/* .arrows path.a1{
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+} */
 
 /* About Section */
 .about-section {
   min-height: 60vh;
   display: flex;
   flex-direction: column;
-}
-.about-section h2 {
-  text-align: center;
-  padding: 3rem;
-  background: #ff5d73;
-  color: #fff;
 }
 .info {
   display: flex;
@@ -139,7 +161,7 @@ nav {
   justify-content: space-around;
 }
 .info img {
-  padding: 4rem 0rem;
+  padding: 6rem 0rem;
   width: 35%;
 }
 /* Custom List Bullets */
@@ -148,4 +170,34 @@ nav {
   color: #ff5d73;
   display: inline-block;
   width: 2rem;
+}
+
+/* Speakers Section */
+.speakers {
+  min-height: 80vh;
+  text-align: center;
+}
+.speaker-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 6rem;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 240px;
+}
+
+/* Keyframes */
+@keyframes bounce {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(20px);
+  }
+}
+@-webkit-keyframes bounce /*Safari and Chrome*/
+{
+
 }
