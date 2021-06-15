@@ -199,5 +199,10 @@ nav {
 }
 @-webkit-keyframes bounce /*Safari and Chrome*/
 {
-
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(20px);
+  }
 }
