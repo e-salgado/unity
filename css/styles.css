@@ -8,6 +8,7 @@
 html {
   /* 1 rem now = 10 pixels*/
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,12 +33,6 @@ figcaption {
 }
 h2 {
   font-size: 3.8rem;
-}
-.section-headers {
-  text-align: center;
-  padding: 4rem;
-  background: #ff5d73;
-  color: #fff;
 }
 h3 {
   font-size: 3rem;
@@ -133,6 +128,7 @@ nav {
   height: 7.2rem;
   position: absolute;
   bottom: 3rem;
+  animation: opening 1s ease-in-out;
 }
 .arrows path {
   /* adds border to svg shapes */
@@ -140,7 +136,7 @@ nav {
   stroke-width: 0.3rem;
   fill: transparent;
   animation: bounce 1.3s infinite ease-in-out;
-  -webkit-animation: bounce 1.3s infinite ease-in-out;
+  -webkit-animation: bounce 1.3s infinite;
 }
 /* .arrows path.a1{
   animation-delay: -1s;
@@ -148,20 +144,27 @@ nav {
 } */
 
 /* About Section */
-.about-section {
+.about {
   min-height: 60vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  border: 2px solid #ff5d73;
+  border-bottom: none;
+}
+.about img {
+  padding: 6rem;
+  width: 40%;
+  margin: auto;
 }
 .info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  margin: auto;
 }
-.info img {
-  padding: 6rem 0rem;
-  width: 35%;
+.info h2 {
+  color: #ff5d73;
 }
 /* Custom List Bullets */
 .about-list li::before {
@@ -173,8 +176,19 @@ nav {
 
 /* Speakers Section */
 .speakers {
-  min-height: 80vh;
+  min-height: 90vh;
   text-align: center;
+  border: 2px solid #ff5d73;
+  border-top: none;
+  border-bottom: none;
+}
+.speakers h2 {
+  text-align: center;
+  padding: 4rem;
+  background: #ff5d73;
+  color: #fff;
+  width: 40%;
+  margin: auto;
 }
 .speaker-cards {
   display: flex;
@@ -183,8 +197,9 @@ nav {
   padding-top: 6rem;
 }
 .profile-pic {
+  border: 2px solid #ff5d73;
   border-radius: 50%;
-  width: 240px;
+  width: 360px;
 }
 
 /* Keyframes */
