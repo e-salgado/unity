@@ -46,12 +46,10 @@ h5 {
 a {
   text-decoration: none;
   color: #ff5d73;
-  transition: 0.2s all ease-in-out;
 }
 a:hover,
 a:focus {
   border-bottom: #ff5d73 solid 1px;
-  font-size: 2.1rem;
 }
 
 /* Nav Bar */
@@ -83,6 +81,17 @@ nav {
   align-items: center;
   list-style: none;
 }
+#register {
+  border: 1px solid #fff;
+  padding: 0.8rem;
+  transition: 0.5s all ease-in-out;
+}
+#register:hover,
+#register:focus {
+  color: #fff;
+  background: #ff5d73;
+  border: 1px solid #ff5d73;
+}
 
 /* Hero Section */
 .hero {
@@ -91,6 +100,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   min-height: 90vh;
   color: #fff;
   display: flex;
@@ -187,8 +197,6 @@ nav {
   padding: 4rem;
   background: #ff5d73;
   color: #fff;
-  width: 40%;
-  margin: auto;
 }
 .speaker-cards {
   display: flex;
@@ -200,6 +208,32 @@ nav {
   border: 2px solid #ff5d73;
   border-radius: 50%;
   width: 360px;
+}
+
+/* Parallax */
+.parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("../img/parallax-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 40vh;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule {
+  min-height: 90vh;
+}
+.schedule h2 {
+  text-align: center;
+  padding: 4rem;
+  background: #ff5d73;
+  color: #fff;
 }
 
 /* Keyframes */
