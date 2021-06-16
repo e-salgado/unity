@@ -133,6 +133,9 @@ nav {
   background: #ff5d73;
   border: 1px solid #ff5d73;
 }
+#countdown {
+  padding-top: 3rem;
+}
 .arrows {
   width: 6rem;
   height: 7.2rem;
