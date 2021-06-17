@@ -151,18 +151,13 @@ nav {
   animation: bounce 1.3s infinite ease-in-out;
   -webkit-animation: bounce 1.3s infinite;
 }
-/* .arrows path.a1{
-  animation-delay: -1s;
-  -webkit-animation-delay: -1s;
-} */
 
 /* About Section */
 .about {
-  min-height: 60vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: row;
-  border: 2px solid #ff5d73;
-  border-bottom: none;
+  width: 90%;
 }
 .about img {
   padding: 6rem;
@@ -188,24 +183,27 @@ nav {
 }
 
 /* Speakers Section */
-.speakers {
-  min-height: 90vh;
-  text-align: center;
-  border: 2px solid #ff5d73;
-  border-top: none;
-  border-bottom: none;
-}
-.speakers h2 {
-  text-align: center;
-  padding: 4rem;
+.speakers-head {
   background: #ff5d73;
+  min-height: 30vh;
+  text-align: center;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
 }
 .speaker-cards {
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding-top: 6rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 2rem 5rem;
+  flex: 1 1 40rem;
 }
 .profile-pic {
   border: 2px solid #ff5d73;
@@ -214,29 +212,51 @@ nav {
 }
 
 /* Parallax */
-.parallax {
+.schedule-head {
   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url("../img/parallax-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   min-height: 40vh;
   text-align: center;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 }
 
-.schedule {
-  min-height: 90vh;
+/* Schedule section */
+.cards {
+  min-height: 60vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.schedule h2 {
+.card {
   text-align: center;
-  padding: 4rem;
+  flex: 1 1 25rem;
+  min-height: 40rem;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  max-width: 20%;
+  margin: 2rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.card h3,
+.card p {
+  padding: 1rem;
+  line-height: 1.8;
+}
+.card-icon {
   background: #ff5d73;
-  color: #fff;
 }
 
 /* Keyframes */
