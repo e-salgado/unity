@@ -19,19 +19,19 @@
     <title>Unity | Welcome</title>
   </head>
   <body>
-    <header id="main-head">
-      <nav>
-        <h2 id="logo">Unity</h2>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#" id="register">Register</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+    <div class="hero-image">
+      <header id="main-head">
+        <nav>
+          <h2 id="logo">Unity</h2>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="./register/index.html" id="register">Register</a></li>
+          </ul>
+        </nav>
+      </header>
       <section class="hero">
         <p>14 August 2021, 7:00pm | Philadelphia, PA, United States</p>
         <h1 id="hero-headline"><span>Developers</span> Conference</h1>
@@ -40,107 +40,127 @@
           nihil inventore quibusdam magni nostrum provident.
         </p>
         <button id="hero-btn">Register</button>
-        <svg class="arrows">
+        <svg class="arrows" aria-label="Down Arrow">
           <path class="a1" d="M0 0 L30 32 L60 0"></path>
         </svg>
         <h2 id="countdown"></h2>
       </section>
-      <section class="about" id="about">
-        <img src="./img/about-img.svg" alt="A person presenting information" />
-        <div class="info">
-          <h2>About The Conference</h2>
-          <ul class="about-list">
-            <li>Lorem dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-          </ul>
-        </div>
-      </section>
-      <section id="speakers">
-        <header class="speakers-head">
-          <h2>Guest Speakers</h2>
-        </header>
-        <div class="speaker-cards">
-          <figure>
-            <img
-              class="profile-pic"
-              src="./img/speaker1.jpg"
-              alt="John Miller Profile Picture"
-            />
-            <p>John Miller</p>
-            <figcaption>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
-              veniam!
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              class="profile-pic"
-              src="./img/speaker2.jpg"
-              alt="Mark James Profile Picture"
-            />
-            <p>Mark James</p>
-            <figcaption>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
-              unde!
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              class="profile-pic"
-              src="./img/speaker3.jpg"
-              alt="Catherine O'Neil"
-            />
-            <p>Catherine O'Neil</p>
-            <figcaption>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum.
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-      <section id="schedule">
-        <header class="schedule-head">
-          <h2>Where Ideas Come Together</h2>
-        </header>
-        <div class="cards">
-          <div class="card">
-            <div class="card-icon">
-              <img src="./img/speaker1.jpg" alt="Joseph Miller" />
-            </div>
-            <h3>Developers Conference</h3>
-            <p>14 August 2021</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque inventore nobis quisquam quidem unde dolorum.
-            </p>
+    </div>
+    <section class="about" id="about">
+      <img src="./img/about-img.svg" alt="A person presenting information" />
+      <div class="info">
+        <h2>About The Conference</h2>
+        <ul class="about-list">
+          <li>Lorem dolor sit amet consectetur, adipisicing elit.</li>
+          <li>Lorem ipsum dolor amet consectetur, adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit amet consectetur, adipisicing.</li>
+          <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="speakers">
+      <header class="speakers-head">
+        <h2>Guest Speakers</h2>
+      </header>
+      <div class="speaker-cards">
+        <figure>
+          <img
+            class="profile-pic"
+            src="./img/speaker1.jpg"
+            alt="John Miller Profile Picture"
+          />
+          <p>John Miller</p>
+          <figcaption>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
+            veniam!
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            class="profile-pic"
+            src="./img/speaker2.jpg"
+            alt="Mark James Profile Picture"
+          />
+          <p>Mark James</p>
+          <figcaption>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit,
+            unde!
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            class="profile-pic"
+            src="./img/speaker3.jpg"
+            alt="Catherine O'Neil"
+          />
+          <p>Catherine O'Neil</p>
+          <figcaption>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="schedule">
+      <header class="schedule-head">
+        <h2>Where Ideas Come Together</h2>
+      </header>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">
+            <img src="./img/speaker1.jpg" alt="Joseph Miller" />
           </div>
-          <div class="card">
-            <div class="card-icon">
-              <img src="./img/speaker2.jpg" alt="Mark James" />
-            </div>
-            <h3>Business Marketing</h3>
-            <p>20 September 2021</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-              facilis?
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-icon">
-              <img src="./img/speaker3.jpg" alt="Catherine O'Neil" />
-            </div>
-            <h3>Money Management</h3>
-            <p>8 November 2021</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              alias.
-            </p>
-          </div>
+          <h3>Developers Conference</h3>
+          <p>14 August 2021</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            inventore.
+          </p>
         </div>
-      </section>
-    </main>
+        <div class="card">
+          <div class="card-icon">
+            <img src="./img/speaker2.jpg" alt="Mark James" />
+          </div>
+          <h3>Business Marketing</h3>
+          <p>20 September 2021</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+            facilis?
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <img src="./img/speaker3.jpg" alt="Catherine O'Neil" />
+          </div>
+          <h3>Money Management</h3>
+          <p>8 November 2021</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            alias.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        <h5>Unity &copy;</h5>
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="./icons/instagram.svg" alt="Instagram Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./icons/twitter.svg" alt="Twitter Logo" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./icons/instagram.svg" alt="Instagram Logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>
