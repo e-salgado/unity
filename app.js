@@ -1,5 +1,12 @@
-// Set the date that is being counted down to
+// Global Variables
+const mouse = document.querySelector(".cursor");
 const countDownDate = new Date("Aug 14, 2021 19:00:00").getTime();
+
+// Functions
+function cursor(e) {
+  mouse.style.top = e.pageY + "px";
+  mouse.style.left = e.pageX + "px";
+}
 
 // Update the count down every 1 second
 let x = setInterval(() => {
@@ -25,3 +32,6 @@ let x = setInterval(() => {
     document.getElementById("countdown").innerHTML = "Conference Is Live";
   }
 }, 1000);
+
+// Event Listeners
+window.addEventListener("mousemove", cursor);
