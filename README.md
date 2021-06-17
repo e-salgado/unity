@@ -3,7 +3,7 @@
 Unity is a seminar website using HTML CSS and JS.
 
 # Showcase
-
+![](https://github.com/e-salgado/unity/blob/master/preview/hero.PNG)
 
 # Color Palette
 
