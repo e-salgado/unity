@@ -52,10 +52,17 @@ a:focus {
   border-bottom: #ff5d73 solid 1px;
 }
 
+.hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("../img/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* Nav Bar */
 #main-head {
-  background: #000;
-  position: sticky;
+  background: transparent;
   top: 0px;
   z-index: 1;
 }
@@ -95,12 +102,6 @@ nav {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
-    url("../img/hero-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 90vh;
   color: #fff;
   display: flex;
@@ -184,7 +185,7 @@ nav {
 
 /* Speakers Section */
 .speakers-head {
-  background: #ff5d73;
+  background: #494949;
   min-height: 30vh;
   text-align: center;
   color: #fff;
@@ -257,6 +258,30 @@ nav {
 }
 .card-icon {
   background: #ff5d73;
+}
+
+/* Footer Section */
+footer {
+  color: #fff;
+  background: #494949;
+}
+.footer-wrapper {
+  margin: auto;
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  flex: 1 1 20rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Keyframes */
