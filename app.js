@@ -7,6 +7,18 @@ function cursor(e) {
   mouse.style.top = e.pageY + "px";
   mouse.style.left = e.pageX + "px";
 }
+function contrastCursor(e) {
+  const item = e.target;
+  if (
+    item.id === "hero-btn" ||
+    item.classList.contains("card-icon") ||
+    item.id === "register"
+  ) {
+    mouse.classList.add("cursor-contrast");
+  } else {
+    mouse.classList.remove("cursor-contrast");
+  }
+}
 
 // Update the count down every 1 second
 let x = setInterval(() => {
@@ -35,3 +47,4 @@ let x = setInterval(() => {
 
 // Event Listeners
 window.addEventListener("mousemove", cursor);
+window.addEventListener("mouseover", contrastCursor);
