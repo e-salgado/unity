@@ -3,7 +3,7 @@
 Unity is a seminar website using HTML CSS and JS.
 
 # Showcase
-![](unity/hero.png)
+
 
 # Color Palette
 
