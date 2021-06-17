@@ -3,10 +3,13 @@
 Unity is a seminar website using HTML CSS and JS.
 
 # Showcase
+*Small circle is cursor border
+
 ![](https://github.com/e-salgado/unity/blob/master/preview/hero.PNG)
 ![](https://github.com/e-salgado/unity/blob/master/preview/about.png)
 ![](https://github.com/e-salgado/unity/blob/master/preview/speakers.png)
 ![](https://github.com/e-salgado/unity/blob/master/preview/schedule.png)
+
 
 # Color Palette
 
