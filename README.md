@@ -1,6 +1,6 @@
 # unity
 
-Unity is a seminar website using HTML CSS and JS.
+Unity is a seminar website using HTML CSS and JS. As of now, all that needs done in terms of content is the registration page. Once that is finished, all html will be done. The next step after that would be to add animations to the content (fade ins, smooth page transitions, etc), with JS, will possibly use gsap. After that, I need to make the site responsive and mobile friendly.
 
 # Showcase
 *Small circle is cursor border
