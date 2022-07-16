@@ -1,6 +1,6 @@
 // Global Variables
 const mouse = document.querySelector(".cursor");
-const countDownDate = new Date("Aug 14, 2021 19:00:00").getTime();
+const countDownDate = new Date("Aug 14, 2022 19:00:00").getTime();
 
 // Functions
 function cursor(e) {

@@ -136,12 +136,13 @@ nav {
 }
 #countdown {
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .arrows {
   width: 6rem;
-  height: 7.2rem;
+  height: 6.8rem;
   position: absolute;
-  bottom: 3rem;
+  bottom: 0rem;
   animation: opening 1s ease-in-out;
 }
 .arrows path {
