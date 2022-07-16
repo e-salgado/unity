@@ -140,9 +140,9 @@ nav {
 }
 .arrows {
   width: 6rem;
-  height: 6.8rem;
+  height: 7.2rem;
   position: absolute;
-  bottom: 0rem;
+  bottom: 3rem;
   animation: opening 1s ease-in-out;
 }
 .arrows path {
